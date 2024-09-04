@@ -1,0 +1,222 @@
+/********************** HEADER **********************/
+/* Estilos para la sección de la cabecera */
+header {
+  padding: 20px;
+  background-color: #4682B4; 
+  color: #FFFFFF; 
+}
+
+header p {
+  font-size: 16px; 
+  text-align: center; 
+  text-transform: uppercase;  
+}
+
+/* MAIN */
+h2 {
+  text-align: start;
+  text-decoration: underline;
+  margin-left: 20px;
+  color: #0000FF;
+}
+
+/********************** SECTION TEXTO **********************/
+/* Estilos para la sección de texto */
+.text-section {
+  padding: 20px;
+  border-radius: 8px; 
+  margin: 20px; 
+  background-color: #ADD8E6; 
+}
+
+.text-section p {
+  font-size: 18px; 
+  text-align: start; 
+  text-transform: uppercase;
+  text-decoration: underline; 
+  color: #000080; 
+  margin: 0 0 15px 0; 
+}
+
+.text-section blockquote {
+  height: 40px;
+  font-size: 20px; 
+  text-align: right; 
+  font-style: italic; 
+  border-left: 4px solid #0000FF; 
+  padding-left: 20px; 
+  margin: 0; 
+  color: #0000FF; 
+  background-color: #adcde6; 
+}
+
+/********************** SECTION CAJAS **********************/
+/* Estilos generales para la sección de cajas */
+.box-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 20px; 
+}
+
+/* Estilos generales para las cajas */
+.box {
+  height: auto; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 18px; 
+  color: #FFFFFF; 
+  border-radius: 8px; 
+  padding: 10px; 
+  box-shadow: 4px 4px 10px rgba(0, 0, 255, 0.2); 
+}
+
+/* Estilos específicos para la primera caja */
+.box1 {
+  background-color: #4682B4; 
+  border: 2px solid #0000FF; 
+}
+
+/* Estilos específicos para la segunda caja (destacada) */
+.box2 {
+  background-color: #87CEEB; 
+  border: 4px solid #0000FF;
+  box-shadow: 6px 6px 15px rgba(0, 0, 255, 0.4); 
+}
+
+/********************** SECCION POSITION **********************/
+
+/* Estilos para la sección de posición */
+.position-section {
+  padding: 20px; 
+}
+
+/* Estilos para el contenedor relativo */
+.relativo {
+  position: relative; 
+  background-color: #ADD8E6; 
+  padding: 20px; 
+  margin-bottom: 40px; 
+  border: 1px solid #0000FF;
+  border-radius: 8px; 
+}
+
+/* Estilos para el elemento absoluto */
+.absoluto {
+  position: absolute; 
+  top: 40px; 
+  right: 30px; 
+  background-color: #0000FF;
+  color: #FFFFFF; 
+  padding: 10px; 
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.3);
+}
+
+/********************** MEDIA QUERIES **********************/
+/* Media query para pantallas con ancho máximo de 768px */
+@media (max-width: 768px) {
+  body {
+    background-color: #E0FFFF; 
+  }
+  header p {
+    font-size: 14px; 
+  }
+  
+  h2 {
+      font-size: 24px; 
+  }
+    
+  .text-section, .box-section, .position-section {
+    width: 90%; 
+    margin: 0 auto; 
+  }
+  .box-section {
+    background-color: #4682B4; 
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .text-section p {
+    font-size: 16px; 
+  }
+  
+  .text-section blockquote {
+    font-size: 18px; 
+  }
+  
+  .box {
+    font-size: 16px; 
+    padding: 8px; 
+  }
+  
+  .relativo {
+    padding: 15px; 
+    margin-bottom: 20px; 
+  }
+  
+  .absoluto {
+    bottom: -20px; 
+    right: 20px; 
+    padding: 8px; 
+  }
+}
+
+/********************** GRID **********************/
+/* Estilos para el contenedor de la cuadrícula */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  gap: 20px; 
+  padding: 20px; 
+}
+
+/* Estilos para los elementos de la cuadrícula */
+.grid-item {
+  background-color: #4682B4; 
+  color: #FFFFFF; 
+  padding: 20px; 
+  text-align: center; 
+  border-radius: 8px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.1); 
+}
+
+/********************** SECTION ANIMACIONES **********************/
+
+.animation-section {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
+/* Estilos para el div con clase animacion (cuadrado rojo fijo) */
+.animacion {
+  width: 100px;
+  height: 100px;
+  background-color: #f44336; /* Fondo rojo */
+}
+
+/* Estilos para el div con clase mover (círculo verde en movimiento) */
+.mover {
+  width: 100px;
+  height: 100px;
+  background-color: #4CAF50; 
+  border-radius: 50%; 
+  animation: mover 4s ease-in-out infinite; /* Animación continua con transición suave */
+}
+
+/* Definición de la animación mover */
+@keyframes mover {
+  0% {
+      transform: translateX(0); /* Posición inicial */
+  }
+  50% {
+      transform: translateX(300px); /* Posición final (derecha) */
+  }
+  100% {
+      transform: translateX(0); /* Regreso a la posición inicial */
+  }
+}
