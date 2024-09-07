@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 1 - Html</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Encabezado Principal</h1>
+            <ul>
+                <li><a href="#estructura">Estructura</a></li>
+                <li><a href="#encabezado">Encabezados</a></li>
+                <li><a href="#divisiones">Divisiones</a></li>
+                <li><a href="#enlaces-listas">Enlaces y Listas</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <h1 id="estructura">1. Estructura Básica del Documento HTML</h1>
+            <p>Este <span style="color:rgb(174, 0, 0)">documento HTML</span> tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</p>
+        </div>
+        <div>
+            <h1 id="encabezado">2. Encabezados y Propiedades del Texto</h1>
+            <h2><b>Este es un texto H2 en negrita</b></h2>
+            <h3><i>Este es un texto H3 en itálica</i></h3>
+            <h4><u>Este es un texto H4 subrayado</u></h4>
+            <h5><s>Este es un texto H5 rayado</s></h5>
+            <h6><small>Este es un texto H6 chiquito (small)</small></h6>
+        </div>
+        <div>
+            <h1 id="divisiones">3. Divisiones y Agrupación de Contenido</h1>
+            <div>
+                <h3>Sección 1</h3>
+                <p>Contenido de la primera sección agrupada en un div.</p>
+            </div>
+            <div>
+                <h3>Sección 2</h3>
+                <p>Contenido de la segunda sección agrupada en un div.</p>
+            </div>
+        </div>
+        <div>
+            <h1 id="enlaces-listas">4. Enlaces y Listas</h1>
+            <p>Visita nuestro <a href="https://www.youtube.com/">sitio web</a> para más información.</p>
+            <p>Enlaces internos:</p>
+            <ul>
+                <li><a href="#estructura">Ir a Estructura Básica</a></li>
+                <li><a href="#multimedia">Ir a Multimedia</a></li>
+                <li><a href="#formulario">Ir a Formulario</a></li>
+            </ul>
+            <p>Lista desordenada:</p>
+            <ul>
+                <li>Primer ítem de una lista desordenada</li>
+                <li>Segundo ítem de una lista desordenada</li>
+            </ul>
+            <p>Lista ordenada:</p>
+            <ol>
+                <li>Primer ítem de una lista ordenada</li>
+                <li>Segundo ítem de una lista ordenada</li>
+            </ol>
+        </div>
+        <div>
+            <h1 id="multimedia">5. Elementos Multimedia</h1>
+            <image src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="Imagen de gato" title="Imagen de gato" height="200px"></image>
+            <video src="/assets/Grabación de pantalla 2024-07-29 144726.mp4" alt="Video" height="200px" controls></video>
+            <audio src="/assets/Woo - Audience Cheer Nickelodeon.m4a" controls></audio>
+        </div>
+        <div>
+            <h1 id="tablas">6. Tablas</h1>
+            <table border="2px">
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                    </tr>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div>
+            <h1 id="formulario">7. Formularios</h1>
+            <label for="form-nombre">Nombre:</label>
+            <input type="text" name="form-nombre" id="form-nombre">
+            <label for="form-email">Email:</label>
+            <input type="email" name="form-email" id="form-email">
+            <label for="form-text">Mensaje:</label>
+            <textarea id="form-text"></textarea>
+            <input type="submit" value="Enviar">
+        </div>
+    </section>
+    <footer>
+        <br>
+        <p><i>Isabella Romo - Comisión "A" - Programación III</i></p>
+    </footer>
+</body>
+</html>
