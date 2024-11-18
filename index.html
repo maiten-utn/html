@@ -1,235 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elementos HTML</title>
-    <meta
-      name="description"
-      content="Este es un trabajo sobre la estructura de un archivo HTML"
-    />
-  </head>
-  <body>
-    <header>
-      <h1>Encabezado Principal</h1>
-      <nav>
-        <ul>
-          <li><a href="#estructura">Estructura</a></li>
-          <li>
-            <a href="#encabezado-y-propiedades"
-              >Encabezado y propiedades del texto</a
-            >
-          </li>
-          <li>
-            <a href="#divisiones-y-agrupaciones">Divisiones y agrupaciones</a>
-          </li>
-          <li><a href="#enlaces-y-listas">Enlaces y listas</a></li>
-          <li><a href="#multimedia">Multimedia</a></li>
-          <li><a href="#tabla">Tabla</a></li>
-          <li><a href="#formulario">Formulario</a></li>
-        </ul>
-      </nav>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctico 1</title>
+</head>
+<body>
+    <header style="background-color: rgb(255, 99, 51); padding: 2em; margin: 6px; border: 1em black; border-radius: 10px;">
+        <h1>PRÁCTICO PROGRAMACIÓN HTML - ENCABEZADO PRINCIPAL</h1>  
+        <nav>
+            <ul>
+                <li> <a href="#estructura">Ir a Estructura</a></li>
+                <li> <a href="#encabezado-propiedad-texto">Ir a Encabezado y Propiedad del Texto</a></li>
+                <li> <a href="#division-agrupacion-contenido">Ir a Division y Agrupacion del Contenido</a></li>
+                <li> <a href="#elemento-multimedia">Ir a Multimedia</a></li>
+                <li> <a href="#tabla">Ir a Tabla</a></li>
+                <li> <a href="#formulario">Ir a Formulario</a></li>
+            </ul>
+        </nav>
     </header>
+    
     <main>
-      <section id="estructura">
-        <article
-          style="
-            border-radius: 10px;
-            background-color: blue;
-            border: 3px solid black;
-          "
-        >
-          <h2>1.Estructura basica HTML</h2>
-          <p>
-            Trabajo Practico de HTML Materia: Programacion III <br />
-            Profesor: Alberto Cortez <br />
-            Alumno: Juan Cruz Robledo: <br />
-            Fecha: 12/8/2024 <br />
-          </p>
-        </article>
-      </section>
-      <section>
-        <article
-          id="encabezado-y-propiedades"
-          style="
-            border-radius: 10px;
-            margin-top: 2px;
-            background-color: red;
-            border: 3px solid black;
-          "
-        >
-          <h2>2.Encabezados y propiedades del texto</h2>
-          <h6>Encabezado de nivel 6</h6>
-          <p>Este es un texto <mark>Marcado</mark></p>
-          <h5>Encabezado 5</h5>
-          <p>Este es un texto con <em>Cursiva</em></p>
-          <h4>Encabezado 4</h4>
-          <p>Este es un texto <u>Subrayado</u></p>
-          <h3>Encabezados 3</h3>
-          <p>Este es un texto <s>Tachado</s></p>
-          <h2>Encabezado 2</h2>
-          <p>Este es un texto con <b>Negrita</b></p>
-          <h1>Encabezado 1</h1>
-          <p>Este es un texto <strong>Fuerte</strong></p>
-        </article>
-      </section>
-      <section>
-        <article
-          id="divisiones-y-agrupaciones"
-          style="
-            border-radius: 10px;
-            margin-top: 2px;
-            background-color: yellow;
-            border: 3px solid black;
-          "
-        >
-          <h2>3.Divisiones y Agrupaciones de contenido</h2>
-          <div>
-            <h2>Seccion 1</h2>
-            <p>Contenido de la primera seccion agrupada en un div</p>
-          </div>
-          <div>
-            <h2>Seccion 2</h2>
-            <p>Contenido de la segunda seccion agrupada en un div</p>
-          </div>
-          <ul>
-            <li>Elemnto sin orden 1</li>
-            <li>Elemnto sin orden 2</li>
-            <li>Elemnto sin orden 3</li>
-          </ul>
-          <ol>
-            <li>Elemento ordenado 1</li>
-            <li>Elemento ordenado 2</li>
-            <li>Elemento ordenado 3</li>
-          </ol>
-        </article>
-      </section>
-      <section>
-        <article
-          id="enlaces-y-listas"
-          style="
-            border-radius: 10px;
-            margin-top: 2px;
-            background-color: whitesmoke;
-            border: 3px solid black;
-          "
-        >
-          <h2>4. Enlaces y Listas</h2>
-          <p>
-            Ver mi informacion personal
-            <a href="informacionPersonal.html">aqui</a>
-          </p>
-          <p>Lista desoradanada:</p>
-          <ul>
-            <li>Elemento sin orden 1</li>
-            <li>Elemento sin orden 2</li>
-            <li>Elemento sin orden 3</li>
-          </ul>
-          <p>Lista ordenada:</p>
-          <ol>
-            <li>Elemento ordenado 1</li>
-            <li>Elemento ordenado 2</li>
-            <li>Elemento ordenado 3</li>
-          </ol>
-        </article>
-      </section>
-      <section
-        style="
-          border-radius: 10px;
-          margin-top: 2px;
-          background-color: pink;
-          border: 3px solid black;
-        "
-      >
-        <article id="multimedia">
-          <h2>Elementos Multimedia</h2>
-          <img
-            height="200"
-            src="src/assets/images/686114f1cb895d860e6216d3544f9f87.jpg"
-            alt="Perro Salchicha"
-          />
-          <video
-            src="src/assets/video/y2mate.com - Perro Salchicha Tocando el Piano_360P.mp4"
-            controls
-            height="200"
-          ></video>
-          <audio
-            src="src/assets/audio/Y2meta.app - Sad Hamster Violin Meme (Full) (128 kbps).mp3"
-            controls
-          ></audio>
-        </article>
-      </section>
-      <section
-        style="
-          border-radius: 10px;
-          margin-top: 2px;
-          background-color: cyan;
-          border: 3px solid black;
-        "
-      >
-        <style>
-          section {
-            padding: 10px;
-          }
-          table {
-            width: 100%;
-            background-color: aquamarine;
-            border: solid 2px black;
-            border-collapse: collapse;
-          }
-          td,
-          th {
-            padding: 5px;
-            border: 1px solid black;
-            text-align: center;
-          }
-        </style>
-        <article id="tabla">
-          <table>
-            <thead>
-              <tr>
-                <th>Columna 1</th>
-                <th>Columna 2</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dato 1</td>
-                <td>Dato 2</td>
-              </tr>
-              <tr>
-                <td>Dato 3</td>
-                <td>Dato 4</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Pie 1</td>
-                <td>Pie 2</td>
-              </tr>
-            </tfoot>
-          </table>
-        </article>
-        <article id="formulario">
-          <form
-            action=""
-            style="margin-top: 10px; display: flex; flex-direction: column"
-          >
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" />
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" />
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message"></textarea>
-            <button style="width: 200px; margin-top: 2px" type="submit">
-              Enviar formulario
-            </button>
-          </form>
-        </article>
-      </section>
+        <section id="estructura">
+            <article>
+                <div style="background-color: rgb(51, 255, 143); padding: 2em; margin: 6px; border: 1em black; border-radius: 10px;">
+                    <h2>1. Estructura Básica del HTML </h1>
+                    <p>Este Documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título </p>
+                </div>
+            </article>
+        </section>
+        <section id="encabezado-propiedad-texto">
+            <article>
+                <div style="background-color: rgb(241, 255, 51); padding: 2em; margin: 6px; border: 1em black; border-radius: 10px;">
+                    <h2>2. Encabezados y propiedades del Texto</h2>
+                    <h2>Encabezado 1</h2>
+                    <p><b>Esto es un texto en negrita</b></p>
+                    <h3>Encabezado 2</h3>
+                    <p><u>Esto es un texto subrayado</u></p>
+                    <h4>Encabezado 3</h4>
+                    <p><s>Esto es un texto tachado</s></p>
+                    <h5>Encabezado 4</h5>
+                    <p><em>Esto es un texto en cursiva</em></p>
+                    <h6>Encabezado 5</h6>
+                    <p><small>Esto es un texto mas pequeño</small></p>
+                </div>
+            </article>
+        </section>
+
+        <section id="division-agrupacion-contenido">
+            <article>
+                <div style="background-color: rgb(241, 77, 241); padding: 2em; margin: 6px; border: 1em black; border-radius: 10px;">
+                    <h2>3. Divisiones y Agrupacion de Contenido</h1>
+                    <main>
+                        <section>
+                            <article>
+                                <h2>Seccion 1</h2>
+                                <p>Contenido de la primera sección agrupada en un div</p>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <h2>Seccion 2</h2>
+                                <p>Contenido de la primera sección agrupada en un div</p>
+                            </article>
+                        </section>
+                    </main>
+                </div>
+            </article>
+        </section>
+        
+        <section id="enlace-lista">
+            <article>
+                <div style="background-color: rgb(60, 158, 255); padding: 2em; margin: 6px; border: 1em black; border-radius: 10px;">
+                    <h2>4. Enlaces y Listas</h1>
+                    <p>Visita nuestro <a href="https://github.com/cachi001">sitio web</a> para más información </p>
+
+                    <p>Lista desordenada: </p>
+                    <ul>
+                        <li>Primer ítem de una lista desordenada</li>
+                        <li>Segundo ítem de una lista desordenada</li>
+                    </ul>
+                
+                    <p>Lista ordenada: </p>
+                    <ol>
+                        <li>Primer ítem de una lista ordenada</li>
+                        <li>Segundo ítem de una lista ordenada</li>
+                    </ol>   
+                </div>
+            </article>
+        </section>
+        
+        <section id="elemento-multimedia">
+            <article>
+                <div style="background-color: rgb(255, 25, 25); padding: 2em; margin: 6px; border: 1em black; border-radius: 10px;">
+                    <h2>5. Elementos Multimedia</h1>
+                    <img src="assets/img/foto1.jpeg" alt="El Mejor del mundo" height="350" width="400">
+                    <video src="assets/video/video.mp4" controls></video>
+                    <audio src="assets/audio/audio.m4a" controls></audio>
+                </div>
+            </article>
+        </section>
+        
+        <section id="tabla">
+            <article>
+                <div style="background-color: rgb(255, 181, 84); padding: 2em; margin: 6px; border: 1em black; border-radius: 10px;">
+                    <h2>6. Tablas</h2>
+                    <table style="border-collapse: collapse; width: 100%;">
+                        <style>
+                            th,td{
+                                border: 1px solid black;
+                                text-align: center;
+                                padding: 8px;
+                            }
+                        </style>
+                        <thead style="background-color: rgb(247, 247, 247); color: rgb(0, 0, 0)">
+                            <tr>
+                                <th>Columna 1</th>
+                                <th>Columna 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dato 1</td>
+                                <td>Dato 2</td>
+                            </tr>
+                            <tr>
+                                <td>Dato 3</td>
+                                <td>Dato 4</td>
+                            </tr>
+                        </tbody>
+                        <tfoot style="background-color: rgb(121, 121, 121); color: rgb(0, 0, 0)">
+                            <tr>
+                                <td>Pie 1</td>
+                                <td>Pie 2</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section id="formulario">
+            <article>
+                <div style="background-color: rgb(167, 255, 84); padding: 2em; margin: 6px; border: 1em black; border-radius: 10px;">
+                    <h2>7. Formularios</h2>
+                    <form action="POST" style="display: flex; justify-content: center; align-content: center;">
+                        <label for="nombre" style="padding: 1em;">Nombre: </label>
+                        <input type="text" name="nombre" required placeholder="Ingrese su Nombre">
+                        <label for="email" style="padding: 1em;">Email: </label>
+                        <input type="email" name="email" required placeholder="Ingrese su Email">
+                        <label for="mensaje" style="padding: 1em;">Mensaje: </label>
+                        <textarea name="mensaje" required placeholder="Ingrese su Mensaje"></textarea>
+                        <button type="submit" style="margin-left: 1em; padding: 1em; border-radius: 10px; border: 0.4px; background-color: black; color: white;">Enviar</button>
+                    </form>
+                </div>
+            </article>
+        </section>
     </main>
-    <footer>
-      <p>&copy; 2024 Juan Cruz Robledo. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+    
+</body>
 </html>
